@@ -1,17 +1,24 @@
+enum GenderEnum {
+  female = 'female',
+  male = 'male',
+  other = 'other',
+}
+
 export interface IFormFilds {
   name: string;
   age: number;
-  passwords: string;
-  gender: string;
-  img?: FileList;
+  email: string;
+  password: string;
+  gender: GenderEnum;
+  foto?: FileList;
   country: string;
+  chek: boolean;
 }
 
 export const CONTRIES = [
   'Afghanistan',
   'Albania',
   'Algeria',
-  'American Samoa',
   'Andorra',
   'Angola',
   'Anguilla',
