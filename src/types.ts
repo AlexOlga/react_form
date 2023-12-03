@@ -1,21 +1,45 @@
-enum GenderEnum {
+/*enum GenderEnum {
   female = 'female',
   male = 'male',
   other = 'other',
 }
-
+*/
 export interface IFormFilds {
   name: string;
   age: number;
   email: string;
   password: string;
-  gender: GenderEnum;
-  foto?: FileList;
-  country: string;
+  gender?: string;
+  foto?: string | null;
+  country?: string;
   chek: boolean;
 }
 
-export const CONTRIES = [
+export interface IFormData {
+  name: string;
+  age: number;
+  email: string;
+  password: string;
+  dublePassword: string;
+  gender: string;
+  country: string;
+  chek: boolean;
+  foto?: FileList;
+}
+export const ERRORS_MESSAGE = {
+  required: 'Required field',
+  invalidEmail: 'Enter the correct email',
+  invalidPassword:
+    'Passwords should match, display the password strength: 1 number, 1 uppercased letter, 1 lowercased letter, 1 special character',
+  invalidAge: 'Age should be number, no negative values',
+  invalideChek: 'Consent is required',
+  invalidDublePass: 'Passwords must match',
+  invalidGender: 'Required field',
+  invalidFoto: 'Maximum image size 2 Mb',
+};
+
+export const MAX_IMAGE_SIZE = 2 * 1048576;
+export const COUNTRIES = [
   'Afghanistan',
   'Albania',
   'Algeria',

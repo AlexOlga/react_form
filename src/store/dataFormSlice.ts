@@ -1,13 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { IFormFilds, CONTRIES } from '../types';
+import { IFormFilds, COUNTRIES } from '../types';
 type TDataState = {
   data: IFormFilds[];
-  contries: string[];
+  countries: string[];
 };
 
 const initialState: TDataState = {
   data: [],
-  contries: CONTRIES,
+  countries: COUNTRIES,
 };
 
 const dataFormSlice = createSlice({
