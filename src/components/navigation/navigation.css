@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+}
+
+.link {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #0a657e;
+}
+.active {
+  color: #61dafb;
+  font-weight: bold;
+}

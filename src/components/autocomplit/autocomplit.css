@@ -1,0 +1,36 @@
+.autocomplete-wrapper {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+  display: none;
+}
+
+.autocomplete-item {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.autocomplete-list {
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  margin: 0;
+  overflow-y: scroll;
+  align-self: flex-end;
+}
+.autocomplete-label {
+  display: flex;
+  justify-content: space-between;
+}
+.autocomplete-input {
+  margin-bottom: 0;
+  margin-right: 0;
+}

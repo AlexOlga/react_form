@@ -1,0 +1,15 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.errors-wrapper {
+  height: 20px;
+  padding: 2px;
+}
+.errors-text {
+  color: red;
+  font-size: 8px;
+}
+input {
+  margin: 5px;
+}
