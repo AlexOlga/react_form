@@ -15,7 +15,7 @@ function Card(props: CardProps) {
       <h3 className="user_name">{name}</h3>
       <img
         className="user_img"
-        src={foto ? foto : `./no-image.jpg`}
+        src={foto ? foto : `./react_form/no-image.jpg`}
         alt="Character image"
       />
       <div className="text-contener">
