@@ -3,13 +3,15 @@ import { IFormFilds } from '../../types';
 import './card.css';
 type CardProps = {
   user: IFormFilds;
+  isLast: boolean;
 };
 
 function Card(props: CardProps) {
   const { name, age, email, gender, country, foto } = props.user;
+  const { isLast } = props;
 
   return (
-    <div className="card-wrapper">
+    <div className={isLast ? 'card-wrapper last-wrapper' : 'card-wrapper'}>
       <h3 className="user_name">{name}</h3>
       <img
         className="user_img"
